@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Triangle Tracker</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <h1>Triangle Tracker</h1>
+  <p>input side lengths and submit to find out if they create a triangle and what kind of triangle they create</p>
+  <form id="sides">
+    <label for="side1">first side:</label>
+    <input id="side1" type="number" min="1">
+    <br />
+    <label for="side2">second side:</label>
+    <input id="side2" type="number" min="1">
+    <br />
+    <label for="side3">third side:</label>
+    <input id="side3" type="number" min="1">
+    <br />
+    <button type="submit" class="btn">Go!</button>
+  </form>
+
+  <h2>Results</h2>
+  <p id="output"></p>
+  <div id="not" class="hidden">
+    <img src="img/x.png" alt="not">
+  </div>
+  <div id="equilateral" class="hidden">
+    <img src="img/eqtri.png" alt="equilateral">
+  </div>
+  <div id="isosceles" class="hidden">
+    <img src="img/isotri.png" alt="isosceles">
+  </div>
+  <div id="scalene" class="hidden">
+    <img src="img/scatri.png" alt="scalene">
+  </div>
+  <div id="right" class="hidden">
+    <img src="img/right.png" alt="right">
+  </div>
+</body>
+</html>
